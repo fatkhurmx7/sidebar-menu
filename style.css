@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-primary: #173d32; 
+  --color-bg: #ccfcd4; 
+  --transition-smooth: all 0.5s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  overflow-x: hidden;
+}
+
+.semua {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#side {
+  position: absolute;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 75%;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 0;
+  height: 100%;
+  background-color: var(--color-primary);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+}
+
+#judul {
+  text-align: center;
+  transform: scale(1.75);
+  cursor: default;
+}
+
+#judul h1, 
+#judul h2 {
+  color: var(--color-primary);
+  font-weight: 900;
+  margin: -17px 0;
+}
+
+sup {
+  font-size: 23px;
+}
+
+#io {
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: pointer;
+}
+
+#io h2 {
+  margin: 0;
+}
+
+#pilih {
+  display: grid;
+  justify-content: end;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#pilih .btn {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 180px;
+  height: 45px;
+  padding: 0 10px;
+  border-radius: 15px 0 0 15px;
+  background: transparent;
+  color: var(--color-bg);
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+#pilih .btn:hover {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-weight: 900;
+}
+
+.container img {
+  width: 130px;
+  height: auto;
+}
